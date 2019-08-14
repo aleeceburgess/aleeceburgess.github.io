@@ -1,0 +1,271 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333D3F;
+}
+
+h1 {
+	margin: 160px 0 30px;
+	color: #4BA174;
+	font-size: 2.25rem;
+	font-weight: 500;
+}
+
+h2 {
+	color: #4BA174;
+	font-size: 25px;
+	margin-bottom: 22px;
+}
+
+a {
+	color: #ad9f61;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+section {
+	margin-bottom: 80px;
+}
+
+.container {
+	width: 780px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media only screen and (max-width: 1068px) {
+	.container {
+		width: 750px;
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	.container {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+header p {
+	width: 400px;
+	line-height: 1.7em;
+	font-size: 14px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (max-width: 760px) {
+	header p {
+		width: 100%;
+		max-width: 300px;
+	}
+
+}
+
+header ul {
+	margin-bottom: 70px;
+	margin: 0 auto;
+}
+
+header ul li {
+	list-style: none;
+	display: inline;
+}
+
+header ul li:after {
+	margin: 0 10px 2px;
+	background-color: #7db698;
+	content: "";
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+header ul li:last-child:after {
+	background: white;
+}
+
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.project-card {
+	width: 360px;
+	margin-bottom: 50px;
+}
+
+.project-card figure {
+	margin: 0 0 5px 0;
+	padding-top: 175px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	border: 1px solid rgb(229, 229, 229);
+}
+
+.project-card a i {
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 760px) {
+	.project-card {
+		width: 100%;
+	}
+}
+
+.section-employment .timeline-date{
+	position: absolute;
+	width: 70px;
+}
+
+.resume-row {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.resume-row:before {
+	position: absolute;
+	z-index: -1;
+	left: 30px;
+	content: "";
+	width: 1px;
+	height: 100%;
+	background-image: linear-gradient(#2c3e50, #2c3e50 88%, rgba(125, 185, 232, 0));
+}
+
+.timeline {
+	width: 25%;
+	margin-bottom: 30px;
+	padding-left: 10px;
+}
+
+.timeline .timeline-icon {
+	width: 40px;
+	height: 40px;
+	padding: 10px 8px;
+	display: inline-block;
+	background-color: #7db698;
+	color: #FFF;
+	transform: rotate(45deg);
+}
+
+.timeline .timeline-icon i {
+	transform: rotate(-45deg);
+}
+
+.timeline-date {
+	font-size: 14px;
+	margin-left: 15px;
+}
+
+.resume-details {
+	width: 75%;
+	margin-bottom: 30px;
+	line-height: 1.4em;
+}
+
+.resume-details h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.resume-details .role {
+	color: #969188;
+	font-size: 16px;
+	font-weight: 200;
+	font-style: italic;
+}
+
+.resume-details .role:before {
+	background-color: #7db698;
+	content: "";
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	margin: 0px 7px 4px 0px;
+}
+
+@media only screen and (max-width: 760px) {
+	.timeline {
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	.resume-details {
+		width: 100%;
+		margin-left: 55px;
+	}
+}
+
+
+/* PROJECT IMAGES */
+
+.project-1 {
+	background-image: url(../images/borderlands_large.jpg);
+}
+
+.project-2 {
+	background-image: url(../images/circle_large.jpg);
+}
+
+.project-3 {
+	background-image: url(../images/calendar_large.jpg);
+}
+
+.project-4 {
+	background-image: url(../images/stars_large.jpg);
+}
+
+.project-5 {
+	background-image: url(../images/fifa_large.jpg);
+}
+
+.project-6 {
+	background-image: url(../images/weather_large.jpg);
+}
+
+@media only screen and (max-width: 760px) {
+	.project-1 {
+		background-image: url(../images/borderlands_small.jpg);
+	}
+
+	.project-2 {
+		background-image: url(../images/circle_small.jpg);
+	}
+
+	.project-3 {
+		background-image: url(../images/calendar_small.jpg);
+	}
+
+	.project-4 {
+		background-image: url(../images/stars_small.jpg);
+	}
+
+	.project-5 {
+		background-image: url(../images/fifa_small.jpg);
+	}
+
+	.project-6 {
+		background-image: url(../images/weather_small.jpg);
+	}
+}

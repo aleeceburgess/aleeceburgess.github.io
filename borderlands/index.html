@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Borderlands 2 gun creator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+    	
+    	<div class="gun-customiser">
+    		<div class="gun-card">
+		    	<div class="black-outter-border">
+			    	<div class="blue-border">
+				    	<div class="black-inner-border">
+					        <div class="holder">
+								<h1 id="gunName">Your title</h1>
+								<ul class="stats">
+									<li class="damage">
+										Damage
+										<span class="up" id="damage">252</span>
+									</li>
+									<li class="accuracy">
+										Accuracy
+										<span class="down" id="accuracy">89.7</span>
+									</li>
+									<li class="fire-rate">
+										Fire Rate
+										<span class="down" id="fireRate">6.1</span>
+									</li>
+									<li class="reload-speed">
+										Reload Speed
+										<span class="up" id="reload">4.2</span>
+									</li>
+									<li class="magazine-size">
+										Magazine Size
+										<span class="up" id="magazine">11</span>
+									</li>
+								</ul><!-- stats -->
+								<ul id="extra-info" class="extra-info">
+									<li id="bulletPoint1"><span>Explodes like a grenade when reloaded!</span></li>
+									<li id="bulletPoint2">70% Critical Hit Damage</li>
+									<li id="bulletPoint3">Insults you after each reload</span></li>
+									<li id="bulletPoint4"><span id="element-desc" class="incendiary">Highly effective vs flesh</span></li>
+								</ul><!-- extra-info -->
+									
+								<figure class="torgue" id="manufacturers"></figure>
+								<figure class="incendiary" id="elements"></figure>
+								<figure class="pistol" id="gunTypes"></figure>
+									
+								
+							</div><!-- holder -->
+						</div> <!-- black-inner-border -->
+					</div> <!-- blue-border -->
+				</div> <!-- black-outter-border -->
+			</div><!-- gun-card -->
+
+
+			<div class="customisation">
+				<fieldset>
+					<legend>Gun name:</legend>
+					<input type="text" id="gunName-input" placeholder="Name">
+				</fieldset>
+				<fieldset>
+					<legend>Stats: (number)</legend>
+					<input type="number" id="damage-input" placeholder="Damage value">
+					<input type="number" id="accuracy-input" placeholder="Accuracy value">
+					<input type="number" id="fireRate-input" placeholder="Fire rate value">
+					<input type="number" id="reload-input" placeholder="Reload speed value">
+					<input type="number" id="magazine-input" placeholder="Magazine value">
+				</fieldset>
+				<fieldset>
+					<legend>Info:</legend>
+					<input type="text" id="bulletPoint1-input" placeholder="Extra info 1">
+					<input type="checkbox" id="red-bullet-input"></input>
+					<label for="red-bullet-input">Do you want the first bullet to be red?</label>
+					<br />
+					<input type="text" id="bulletPoint2-input" placeholder="Extra info 2">
+					<input type="text" id="bulletPoint3-input" placeholder="Extra info 3">
+				</fieldset>
+				<fieldset>
+					<legend>Manufacturer:</legend>
+					<input type="radio" id="torgue" name="manufacture" checked ></input>
+					<label for="torgue">Torgue</label>
+					<input type="radio" id="tediore" name="manufacture"></input>
+					<label for="tediore">Tediore</label>
+					<input type="radio" id="vladof" name="manufacture"></input>
+					<label for="vladof">Vladof</label>
+					<input type="radio" id="bandit" name="manufacture"></input>
+					<label for="bandit">Bandit</label>
+					<input type="radio" id="hyperion" name="manufacture"></input>
+					<label for="hyperion">Hyperion</label>
+					<input type="radio" id="maliwan" name="manufacture"></input>
+					<label for="maliwan">Maliwan</label>
+					<input type="radio" id="jakobs" name="manufacture"></input>
+					<label for="jakobs">Jakobs</label>
+					<input type="radio" id="dahl" name="manufacture"></input>
+					<label for="dahl">Dahl</label>
+				</fieldset>
+				<fieldset>
+					<legend>Element:</legend>
+					<input type="radio" id="incendiary" name="element" checked></input>
+					<label for="incendiary">Incendiary</label>
+					<input type="radio" id="explosive" name="element"></input>
+					<label for="explosive">Explosive</label>
+					<input type="radio" id="corrosive" name="element"></input>
+					<label for="corrosive">Corrosive</label>
+					<input type="radio" id="shock" name="element"></input>
+					<label for="shock">Shock</label>
+					<input type="radio" id="slag" name="element"></input>
+					<label for="slag">Slag</label>
+					<input type="radio" id="none" name="element"></input>
+					<label for="none">None</label>
+				</fieldset>
+				<fieldset>
+					<legend>Type:</legend>
+					<input type="radio" id="pistol" name="gunType" checked></input>
+					<label for="pistol">Pistol</label>
+					<input type="radio" id="smg" name="gunType"></input>
+					<label for="smg">SMG</label>
+					<input type="radio" id="shotgun" name="gunType"></input>
+					<label for="shotgun">Shotgun</label>
+					<input type="radio" id="assault" name="gunType"></input>
+					<label for="assault">Assault Riffle</label>
+					<input type="radio" id="rocket" name="gunType"></input>
+					<label for="rocket">Rocket Launcher</label>
+					<input type="radio" id="sniper" name="gunType"></input>
+					<label for="sniper">Sniper</label>
+				</fieldset>
+			</div>
+		</div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

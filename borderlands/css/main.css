@@ -1,0 +1,322 @@
+@font-face {
+    font-family: "Borderlands-webfont";
+    src: url("../fonts/willowbody_webfont.woff") format('woff');
+}
+
+.gun-customiser {
+    display: flex;
+}
+
+.gun-card {
+    margin: 2em;
+}
+
+.black-outter-border {
+    margin: 30px auto;
+    background: black;
+    -webkit-clip-path: polygon(0% 95%,5% 100%,25% 100%,30% 95%,70% 95%,75% 100%,95% 100%,100% 95%,100% 5%,95% 0%,5% 0%,0% 5%);
+}
+
+.blue-border {
+    background: #4cc4d7;
+    -webkit-clip-path: polygon(1% 94%,6% 99%,25% 99%,30% 94%,71% 94%,76% 99%,94% 99%,99% 94%,99% 6%,94% 1%,6% 1%,1% 6%);
+}
+
+.black-inner-border {
+    background: black;
+    -webkit-clip-path: polygon(5% 90%,10% 95%,23% 95%,28% 90%,72% 90%,77% 95%,90% 95%,95% 90%,95% 10%,90% 5%,10% 5%,5% 10%);
+}
+
+.holder {
+    width: 530px;
+    height: 100%;
+    font-family: Borderlands-webfont;
+    background:
+        /* stripes */
+        linear-gradient(
+            to bottom,
+            transparent,
+            rgba(36,76,144,0.3) 50%,
+            rgba(31,66,122,0.3) 50%,
+            transparent
+        ),
+        
+        /* background hightlight */
+        radial-gradient(at 60% bottom, rgba(174,253,244,0.7),transparent),
+        
+        /* background */
+        radial-gradient(at 60% top, rgba(62,89,136,1), rgba(31,62,111,1), rgba(17,45,90,1)
+    );
+
+    background-size: 100% 6px, 100% 100%, 100% 100%;
+
+    -webkit-clip-path: polygon(6% 89%,11% 94%,23% 94%,28% 89%,72% 89%,77% 94%,89% 94%,94% 89%,94% 11%,89% 6%,11% 6%,6% 11%);
+}
+
+.holder h1 {
+    text-align: center;
+    padding: 30px 55px 0;
+    min-height: 33px;
+    font-size: 24px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.holder .stats {
+	padding: 5px 40px 0 40px;
+    background-color: rgba(189, 236, 242, 0.19);
+    color: #B2F6F6;
+    font-size: 17px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #355756;
+    list-style: none;
+}
+
+.holder .stats li {
+	height: 27px;
+	padding-left: 30px;
+	background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+
+.holder .stats li span {
+    width: 100px;
+    height: 21px;
+    font-size: 16px;
+    text-align: right;
+    padding-right: 21px;
+    background-repeat: no-repeat;
+}
+
+.holder .stats li {
+    background-image: url("../images/stats.png");   
+}
+
+.holder .stats .damage {
+	background-position: 0px 0px;
+}
+
+.holder .stats .accuracy {
+	background-position: 0px -25px;
+}
+
+.holder .stats .fire-rate {
+	background-position: 0px -50px;
+}
+
+
+.holder .stats .reload-speed {
+	background-position: 0px -75px;
+}
+
+
+.holder .stats .magazine-size {
+	background-position: 0px -100px;
+}
+
+.holder .stats li span.up {
+	background-image: url("../images/arrows.png");
+	background-position: 103px 1px;
+}
+
+.holder .stats li span.down {
+	background-image: url("../images/arrows.png");
+	background-position: 104px -21px;
+}
+
+.holder .extra-info {
+	width: 400px;
+    margin-left: 30px;
+    padding:0;
+	font-size: 16px;
+	list-style: none;
+	color: white;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #999999;
+}
+
+.holder .extra-info li {
+	padding-left: 27px; 
+}
+
+.holder .extra-info li:before {
+    content: "■ ";
+    color: white;
+}
+
+.holder .extra-info span {
+	letter-spacing: 1.2px;
+}
+
+.holder .extra-info .red-text {
+	color: #e22549;
+	-webkit-text-stroke-color: #4b0a16;
+}
+
+.holder .extra-info #element-desc.incendiary {
+	color: #eca329;
+	-webkit-text-stroke-color: #5e4214;
+}
+
+.holder .extra-info #element-desc.explosive {
+	color: #FCFA37;
+	-webkit-text-stroke-color: #8B6B49;
+}
+
+.holder .extra-info #element-desc.corrosive {
+	color: #34ED00;
+	-webkit-text-stroke-color: #2C5D4F;
+}
+
+.holder .extra-info #element-desc.shock {
+	color: #44A5DC;
+	-webkit-text-stroke-color: #0E6BD8;
+}
+
+.holder .extra-info #element-desc.slag {
+	color: #8F21BA;
+	-webkit-text-stroke-color: #673092;
+}
+
+.holder #manufacturers {
+    width: 150px;
+    height: 50px;
+    margin: 1em 0 4em 3em;
+    display: inline-block;
+}
+
+.holder #manufacturers.torgue {
+    background-image: url("../images/manufacturers.png");
+    background-position:0px 0px;
+}
+
+.holder #manufacturers.tediore {
+    background-image: url("../images/manufacturers.png");
+    background-position:0px -50px;
+}
+
+.holder #manufacturers.vladof {
+    background-image: url("../images/manufacturers.png");
+    background-position:0px -100px;
+}
+
+.holder #manufacturers.bandit {
+    background-image: url("../images/manufacturers.png");
+    background-position:0px -150px;
+}
+
+.holder #manufacturers.hyperion {
+    background-image: url("../images/manufacturers.png");
+    background-position:0px -200px;
+}
+
+.holder #manufacturers.maliwan {
+    background-image: url("../images/manufacturers.png");
+    background-position:0px -250px;
+}
+
+.holder  #manufacturers.jakobs {
+    background-image: url("../images/manufacturers.png");
+    background-position:0px -300px;
+}
+
+.holder #manufacturers.dahl {
+    background-image: url("../images/manufacturers.png");
+    background-position:0px -350px;
+}
+
+.holder #elements {
+    width: 50px;
+    height: 50px;
+    margin: 1em 2em 4em 2em;
+    display: inline-block;
+}
+
+.holder #elements.incendiary {
+    background-image: url("../images/elements.png");
+    background-position:0px 0px;
+}
+
+.holder #elements.explosive {
+    background-image: url("../images/elements.png");
+    background-position:0px -50px;
+}
+
+.holder #elements.corrosive {
+    background-image: url("../images/elements.png");
+    background-position:0px -100px;
+}
+
+.holder #elements.shock {
+    background-image: url("../images/elements.png");
+    background-position:0px -150px;
+}
+
+.holder #elements.slag {
+    background-image: url("../images/elements.png");
+    background-position:0px -200px;
+}
+
+.holder #gunTypes {
+    width: 155px;
+    height: 60px;
+    margin: 0 0 4em 0;
+    display: inline-block;
+}
+
+.holder #gunTypes.pistol {
+    background-image: url("../images/gun-types.png");
+    background-position:0px 0px;
+}
+
+.holder #gunTypes.smg {
+    background-image: url("../images/gun-types.png");
+    background-position:0px -60px;
+}
+
+.holder #gunTypes.shotgun {
+    background-image: url("../images/gun-types.png");
+    background-position:0px -120px;
+}
+
+.holder #gunTypes.assault {
+    background-image: url("../images/gun-types.png");
+    background-position:0px -180px;
+}
+
+.holder #gunTypes.rocket {
+    background-image: url("../images/gun-types.png");
+    background-position:0px -240px;
+}
+
+.holder #gunTypes.sniper {
+    background-image: url("../images/gun-types.png");
+    background-position:0px -300px;
+}
+
+
+
+
+
+
+.customisation {
+	width: 90%;
+	margin-left: 5%;
+}
+
+.customisation fieldset {
+	margin-bottom: 10px;
+}
+
+.customisation input {
+	margin: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
