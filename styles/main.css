@@ -220,52 +220,60 @@ header ul li:last-child:after {
 
 /* PROJECT IMAGES */
 
-.project-1 {
-	background-image: url(../images/borderlands_large.jpg);
-}
-
-.project-2 {
-	background-image: url(../images/circle_large.jpg);
-}
-
-.project-3 {
-	background-image: url(../images/calendar_large.jpg);
-}
-
-.project-4 {
-	background-image: url(../images/stars_large.jpg);
-}
-
-.project-5 {
-	background-image: url(../images/fifa_large.jpg);
+.project-7 {
+	background-image: url(../images/avatar_large.jpg);
 }
 
 .project-6 {
+	background-image: url(../images/borderlands_large.jpg);
+}
+
+.project-5 {
+	background-image: url(../images/circle_large.jpg);
+}
+
+.project-4 {
+	background-image: url(../images/calendar_large.jpg);
+}
+
+.project-3 {
+	background-image: url(../images/stars_large.jpg);
+}
+
+.project-2 {
+	background-image: url(../images/fifa_large.jpg);
+}
+
+.project-1 {
 	background-image: url(../images/weather_large.jpg);
 }
 
 @media only screen and (max-width: 760px) {
-	.project-1 {
-		background-image: url(../images/borderlands_small.jpg);
-	}
-
-	.project-2 {
-		background-image: url(../images/circle_small.jpg);
-	}
-
-	.project-3 {
-		background-image: url(../images/calendar_small.jpg);
-	}
-
-	.project-4 {
-		background-image: url(../images/stars_small.jpg);
-	}
-
-	.project-5 {
-		background-image: url(../images/fifa_small.jpg);
+	.project-7 {
+		background-image: url(../images/avatar_small.jpg);
 	}
 
 	.project-6 {
+		background-image: url(../images/borderlands_small.jpg);
+	}
+
+	.project-5 {
+		background-image: url(../images/circle_small.jpg);
+	}
+
+	.project-4 {
+		background-image: url(../images/calendar_small.jpg);
+	}
+
+	.project-3 {
+		background-image: url(../images/stars_small.jpg);
+	}
+
+	.project-2 {
+		background-image: url(../images/fifa_small.jpg);
+	}
+
+	.project-1 {
 		background-image: url(../images/weather_small.jpg);
 	}
 }
