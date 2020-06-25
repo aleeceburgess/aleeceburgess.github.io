@@ -220,6 +220,10 @@ header ul li:last-child:after {
 
 /* PROJECT IMAGES */
 
+.project-9 {
+	background-image: url(../images/pokedex_large.jpg);
+}
+
 .project-8 {
 	background-image: url(../images/recipe_large.jpg);
 }
@@ -253,9 +257,14 @@ header ul li:last-child:after {
 }
 
 @media only screen and (max-width: 760px) {
-	project-8 {
+	.project-9 {
+		background-image: url(../images/pokedex_small.jpg);
+	}
+
+	.project-8 {
 		background-image: url(../images/recipe_small.jpg);
 	}
+
 	.project-7 {
 		background-image: url(../images/avatar_small.jpg);
 	}
